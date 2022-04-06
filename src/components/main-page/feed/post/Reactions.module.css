@@ -1,0 +1,95 @@
+/****** THIS NEEDS TO HANDLE WITH AGAIN ****/
+
+.reactions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reaction {
+  display: flex;
+  align-items: center;
+  transition: 150ms;
+  margin: 0px 40px;
+}
+.reaction .icon {
+  fill: var(---99);
+  font-size: 30px;
+  padding: 6px;
+  font-weight: 100;
+  border-radius: 50%;
+}
+
+.reaction .number {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: -3px;
+  font-weight: 400;
+}
+
+.reaction:hover .icon {
+  background-color: var(--twitter-hover);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.number:hover {
+  cursor: pointer;
+}
+
+/* .comment .icon,
+.share .icon {
+  fill: rgb(29, 155, 240);
+}
+
+.retweet .icon {
+  fill: rgb(0, 186, 124);
+}
+.retweet span,
+.comment span {
+  color: rgb(0, 186, 124);
+}
+.fav span {
+  color: rgb(249, 24, 128);
+}
+.share span {
+  color: rgb(29, 155, 240);
+}
+
+.fav .icon {
+  fill: rgb(249, 24, 128);
+} */
+
+.comment .icon:hover {
+  fill: rgb(29, 155, 240);
+  background-color: #e1eef6;
+}
+.comment:hover span,
+.comment span:hover,
+.share:hover span,
+.share span:hover {
+  color: rgb(29, 155, 240);
+}
+.retweet .icon:hover {
+  fill: rgb(0, 186, 124);
+  background-color: #def1eb;
+}
+
+.retweet:hover span,
+.retweet span:hover {
+  color: rgb(0, 186, 124);
+}
+.fav .icon:hover {
+  fill: rgb(249, 24, 128);
+  background-color: #f7e0eb;
+}
+
+.fav:hover span,
+.fav span:hover {
+  color: rgb(249, 24, 128);
+}
+
+.share .icon:hover {
+  fill: rgb(29, 155, 240);
+  background-color: #e1eef6;
+}

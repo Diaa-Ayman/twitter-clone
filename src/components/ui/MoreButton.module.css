@@ -1,0 +1,14 @@
+.control {
+  border-radius: 60%;
+  text-align: center;
+}
+.control svg {
+  fill: var(---99);
+}
+.control:hover {
+  background: #dae8f0;
+  cursor: pointer;
+}
+.control:hover svg {
+  fill: var(--main-color);
+}

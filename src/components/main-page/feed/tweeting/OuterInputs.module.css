@@ -1,0 +1,20 @@
+/* This for all inputs of outer */
+
+.media-input {
+  display: none;
+}
+
+.react-input-emoji--container {
+  visibility: hidden;
+}
+.icon {
+  font-size: 35px;
+  fill: var(--main-color);
+  padding: 8px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  background: var(--light-main-color);
+  border-radius: 100%;
+}

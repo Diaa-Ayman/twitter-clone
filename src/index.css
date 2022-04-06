@@ -1,0 +1,151 @@
+:root {
+  --main-color: #1d9bf0;
+  --dark-main-color: #8ecdf8;
+  --light-main-color: #e8f5fd;
+  --twitter-hover: #e7e7e8;
+  --light-black: #0f1419;
+  --light-text-color: rgb(71, 86, 97);
+  --white: #fff;
+  --black: #000;
+  --blue: blue;
+  --ccc: #ccc;
+  --eee: #eee;
+  ---99: #999;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+}
+*:hover {
+  transition: 0.2s;
+}
+html {
+  font-family: 'Chirp';
+  /* background-color: #999; */
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  /* background-color: #999; */
+}
+
+/* For large inputs in the project */
+
+.large-input input {
+  width: 90%;
+  padding: 15px 10px;
+  border: 1.5px solid #eee;
+  outline: none;
+  margin: 10px;
+  border-radius: 6px;
+}
+.large-input input:focus {
+  border: 2px solid var(--main-color);
+}
+.large-input input::placeholder {
+  text-transform: capitalize;
+  transition: 0.6s;
+}
+.large-input input:focus::placeholder {
+  color: var(--main-color);
+  position: fixed;
+  top: 2px;
+  left: 5px;
+  font-size: 12px;
+  transition: 0.5s;
+  margin-bottom: 3px;
+}
+.centered {
+  margin: 1rem auto;
+  text-align: center;
+  font-weight: 900;
+}
+
+.middle {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.9px solid var(--light-main-color);
+  border-left: 0.9px solid var(--light-main-color);
+}
+
+.main-page {
+  min-height: 200vh;
+  display: flex;
+  padding: 0 3rem;
+}
+/*           SHOW ELEMNT WHEN HOVERING  !IMPORTANT
+.hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+} */
+
+/******** LOADING SPINNER STYLING *********/
+
+.spinner {
+  border: 3px solid #fff;
+  border-bottom-color: transparent;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: spin infinite linear 1.2s;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.leave {
+  margin-top: 2rem;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

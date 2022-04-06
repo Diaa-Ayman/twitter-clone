@@ -1,0 +1,62 @@
+.who-reply-card {
+  width: 320px;
+  height: 275px;
+  margin: 30px;
+  padding: 15px 0 0 0;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px 2px 2px #999;
+  border-radius: 15px;
+}
+
+.who-reply-card-header {
+  font-weight: 650;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.who-reply-card-icon {
+  background-color: var(--main-color);
+  fill: var(--white);
+  font-size: 40px;
+  padding: 8px;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+.guide {
+  margin: 5px 0 1.1rem;
+}
+.guide > p {
+  font-weight: 500;
+  color: var(---99);
+  margin: 0;
+  font-size: 14px;
+  margin-top: -3px;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+}
+
+.selection > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 120ms;
+}
+.selection div:hover {
+  background-color: var(--twitter-hover);
+  cursor: pointer;
+  transition: 120ms;
+}
+.selection span {
+  font-size: 15px;
+}
+
+.who-reply-card-header,
+.guide {
+  padding-left: 12px;
+}

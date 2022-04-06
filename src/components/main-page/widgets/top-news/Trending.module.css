@@ -1,0 +1,25 @@
+.trending {
+  padding: 10px;
+}
+.trending:hover {
+  background-color: #eff1f1;
+  cursor: pointer;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.place,
+.number {
+  color: var(---99);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.trend {
+  font-size: 18px;
+  font-weight: 600;
+}

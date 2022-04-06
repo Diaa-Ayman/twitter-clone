@@ -1,0 +1,163 @@
+.sign-in-card {
+  margin: 1.4rem auto;
+  width: 40%;
+  animation: appear 1s ease-out forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sign-in-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 1rem;
+}
+.sign-in-header-logo .logo {
+  width: 32px;
+  fill: var(--main-color);
+  justify-self: start;
+}
+
+.sign-in-header .close-btn {
+  font-size: 20px;
+  font-weight: 550;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.sign-in-header .close-btn:hover {
+  background-color: var(--ccc);
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 5px auto;
+}
+
+.sign-in-form legend {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.apple .fa-apple {
+  color: var(--black);
+  font-size: 18px;
+  margin-right: 8px;
+}
+.apple {
+  color: var(--black);
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.sign-with-apple {
+  margin-bottom: 0.9rem;
+}
+.sign-with-apple button {
+  font-weight: 550;
+  color: var(--black);
+  width: 100%;
+  margin-top: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.sign-with-apple button:hover {
+  background-color: #eee;
+}
+/*  OR */
+
+.or {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 12px 0 6px 0px;
+}
+.or-span {
+  margin: -10px 8px 0px;
+}
+.or .line {
+  border-bottom: 1px solid var(--ccc);
+  width: 43%;
+  height: 3px;
+}
+/* Sign In Input */
+
+.sign-in-input {
+  margin-top: 0;
+}
+
+.sign-in-input input {
+  padding: 13px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid #ccc;
+  margin-top: 0;
+}
+/* .sign-in-input input:focus {//                      Not used....
+  border: 2px solid var(--main-color);
+}
+.sign-in-input input::placeholder {
+  text-transform: capitalize;
+  transition: 0.6s;
+}
+.sign-in-input input:focus::placeholder {
+  color: var(--main-color);
+  position: fixed;
+  top: 2px;
+  left: 5px;
+  font-size: 12px;
+  transition: 0.5s;
+  margin-bottom: 3px;
+} */
+
+/* Sign In Next button */
+
+.submit button {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: 0.5s;
+  padding: 4px 0px;
+}
+
+.sign-in-next {
+  margin: 4rem 0 1rem;
+  text-align: center;
+}
+.sign-in-next button {
+  background-color: var(--light-black);
+  color: var(--white);
+}
+.sign-in-next button:hover {
+  background-color: var(--black);
+  transition: 0.5s;
+}
+
+.forget-password button {
+  color: var(--black);
+}
+.forget-password button:hover {
+  background-color: var(--eee);
+}

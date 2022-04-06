@@ -1,0 +1,28 @@
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  padding: 0 0.9rem;
+  background-color: #f7f9f9;
+}
+.search-icon {
+  font-size: 19px;
+  color: var(---99);
+}
+.search input {
+  border: none;
+  background-color: transparent;
+  width: 300px;
+  padding: 0.65rem;
+  outline: none;
+}
+
+.on-focus {
+  background-color: #fff;
+  outline: 1px solid var(--main-color);
+}
+
+.on-focus .search-icon {
+  color: var(--main-color);
+}

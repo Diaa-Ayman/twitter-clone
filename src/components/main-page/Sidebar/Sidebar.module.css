@@ -1,0 +1,76 @@
+.sidebar {
+  padding: 0.3rem 4.5rem 0 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+}
+.sidebar-control {
+  position: fixed;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+}
+.activeLink {
+  color: var(--main-color) !important;
+  font-weight: 700;
+}
+.active {
+  font-weight: 700;
+}
+
+.main-page-logo {
+  width: 50px;
+  fill: var(--main-color);
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 0.6rem;
+  border-radius: 48%;
+}
+.main-page-logo:hover {
+  background-color: var(--light-main-color);
+  cursor: pointer;
+}
+.tweet {
+  background-color: var(--main-color);
+  text-align: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  width: 197px;
+  transition: 100ms;
+  padding: 12px 15px;
+  border-radius: 50px;
+  margin-top: 1rem;
+}
+
+.tweet:hover {
+  background-color: #1a8cd8;
+  transition: 100ms;
+}
+
+/****************  LOGOUT BTN *************/
+.logout {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.logout button {
+  width: 197px;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1280px) {
+  .sidebar {
+    justify-content: right;
+    width: 88px;
+  }
+}

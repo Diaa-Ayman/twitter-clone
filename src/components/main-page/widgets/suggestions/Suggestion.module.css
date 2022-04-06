@@ -1,0 +1,48 @@
+.suggestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 15px 0;
+}
+.suggestion:hover {
+  background-color: #eff1f1;
+  cursor: pointer;
+}
+.suggestion:hover .name {
+  text-decoration: underline;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user-image {
+  margin-right: 10px;
+}
+.name {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(---99);
+}
+.follow button {
+  background-color: rgb(24, 24, 24);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  padding: 7px 16px;
+}
+
+.follow button:hover {
+  opacity: 0.9;
+}
